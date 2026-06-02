@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Inteligente de Gestión Escolar</title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Sistema Inteligente de Gestión Escolar</h1>
+    <p>Proyecto Final JavaScript</p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+
+        <h2>Registro de Estudiante</h2>
+
+        <form id="studentForm">
+
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+            <input type="number" id="edad" placeholder="Edad" required>
+
+            <input type="text" id="grado" placeholder="Grado" required>
+
+            <input type="text" id="curso" placeholder="Curso" required>
+
+            <input type="text" id="notas"
+                placeholder="Notas separadas por comas (80,90,100)"
+                required>
+
+            <button type="submit">
+                Registrar Estudiante
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Gestión de Notas</h2>
+
+        <button onclick="agregarNota()">
+            ➕ Agregar Nota
+        </button>
+
+        <button onclick="eliminarNota()">
+            ➖ Eliminar Última Nota
+        </button>
+
+    </section>
+
+    <section class="card" id="resultado">
+
+        <h2>Información del Estudiante</h2>
+
+        <p>Esperando registro...</p>
+
+    </section>
+
+</main>
+
+<script src="pagina.js"></script>
+
+</body>
+
+</html>
